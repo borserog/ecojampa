@@ -1,0 +1,199 @@
+/* ------------------------------------------------------------------------------ */
+/* PALETA */
+/* ------------------------------------------------------------------------------ */
+/* padrão: #90DC5A rgb(144, 220, 90) 
+    escuro: #53A31B rgb(83, 163, 27)*/
+
+/* ------------------------------------------------------------------------------ */
+/* Breakpoints */
+/* ------------------------------------------------------------------------------ */
+/* max 375px <mobile>
+    max 800px <tablet>
+     <desktop> max 1040px */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Dosis', sans-serif;
+    font-size: 17.5px;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header" "didYou" "didYou";
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Títulos */
+/* ------------------------------------------------------------------------------ */
+h1 {
+    font-size: 280%;
+    text-shadow: 4px 3px 7px rgba(0,0,0,0.51);
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;  
+    margin: 30px auto;
+    letter-spacing: 1px; 
+    order: 0;
+  }
+  
+h2:after {    
+      display: block;
+      height: 2px;
+      width: 100px;
+      background-color: #90DC5A;
+      content: " ";
+      margin: 0 auto;
+      margin-top: 15px;      
+  }
+
+h3 {
+    font-size: 140%;
+    word-spacing: 2px;
+    text-align: center;  
+    margin: 10px auto;
+    letter-spacing: 1px; 
+  }
+
+p {
+    text-align: justify;
+    margin: 0 15px 15px 15px;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: HEADER */
+/* ------------------------------------------------------------------------------ */
+header {
+    grid-area: header;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(resources/img/jilbert-ebrahimi-691926-unsplash.jpg);
+    background-position: -253px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+header nav {
+    height: 25vh;
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav .logo {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(144, 220, 90, 0.64);
+
+}
+
+header nav .logo img {
+    width: 50px;
+    margin: 6px;    
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    background-color: rgba(83, 163, 27, 0.5);
+}
+
+header nav ul li {
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited {
+    color: white;
+    text-decoration: none;    
+}
+
+header nav ul li:hover {
+    background-color:rgba(84, 163, 27, 0.2);   
+}
+
+header #maintext {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 18px;
+}
+
+header #maintext .container {
+    position: relative;
+    top: -140px;
+}
+
+header #maintext h1 {
+    letter-spacing: 7px;
+    padding-bottom: 10px;
+}
+
+header #maintext p {
+    letter-spacing: 2px;
+    margin: 0;
+}
+/* ------------------------------------------------------------------------------ */
+/* Seção: ENTENDA */
+/* ------------------------------------------------------------------------------ */
+#entenda {
+    display: flex;
+    flex-direction: column;
+    
+    /* TODO: breakpoints */
+}
+
+#entenda .sectionImg {
+    width: 100vw;
+    overflow: hidden; 
+}
+
+#entenda .sectionImg {
+    width: 100vw;
+    overflow: hidden;
+}    
+
+#entenda:nth-child(3) {
+    display: hidden;
+}
+
+#entenda .sectionImg img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 2s,
+                transform 1.5s;
+        
+}
+
+#entenda .sectionImg img:hover {
+    filter: none;
+    transform: scale(1.1) rotate(3deg); 
+    overflow: hidden; 
+}
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: TIPS */
+/* ------------------------------------------------------------------------------ */
