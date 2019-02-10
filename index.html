@@ -6,8 +6,9 @@
     <title>ECO_Jampa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,600,700" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" media="screen" href="test.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <header id="main">
@@ -23,9 +24,9 @@
             </ul>
         </nav>
         <div id="maintext">
-            <div class="container">
+            <div class="maincontainer">
                 <h1>Eco_JAMPA</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat.</p>
+                <p>Promovendo alternativas para uma João Pessoa mais limpa, moderna e sustentável.</p>
             </div>
         </div>
         
@@ -34,14 +35,15 @@
     
     <section id="entenda">
         <h2>ENTENDA</h2>
+        <div class="text">
+           <!--  <h3>O PROBLEMA</h3> -->
+            <p>Segundo a ABRELPE, 41,7% dos municípios brasileiros destinam inadequadamente os seus residuos sólidos</p>
+            <p>Produzimos por ano 10,5 milhões de toneladas de plástico. Seria possível retornar cerca de 5,7 bilhões de reais para a economia se essa quantidade de plástico fosse reciclada.</p>
+            <p>Apenas 3% do lixo gerado no Brasil é reciclado.</p>
+        </div> 
         <div class="sectionImg">
             <img src="resources/img/dustan-woodhouse-675082-unsplash.jpg">       
         </div>
-        <div class="text">
-            <h3>O PROBLEMA</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas veritatis, suscipit temporibus modi nesciunt quos, exercitationem libero, enim eveniet corrupti dolores. Sit neque ab quae voluptate incidunt, minima nostrum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas veritatis, suscipit temporibus modi nesciunt quos, exercitationem libero, enim eveniet corrupti dolores. Sit neque ab quae voluptate incidunt, minima nostrum.</p>
-        </div> 
 <!--         <ul class="factList">
             <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam explicabo, repudiandae dignissimos </li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque libero hic architecto quam tempore voluptate officia vel laborum facere! </li>
@@ -50,14 +52,14 @@
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatem. Sint, eaque deserunt nulla libero facilis autem </li>
         </ul> -->
 
-        <div class="sectionImg">
+        <!-- <div class="sectionImg">
             <img src="resources/img/vova-drozdey-683331-unsplash.jpg">       
         </div>
         <div class="text">
                 <h3>O PROBLEMA</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas veritatis, suscipit temporibus modi nesciunt quos, exercitationem libero, enim eveniet corrupti dolores. Sit neque ab quae voluptate incidunt, minima nostrum.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas veritatis, suscipit temporibus modi nesciunt quos, exercitationem libero, enim eveniet corrupti dolores. Sit neque ab quae voluptate incidunt, minima nostrum.</p>
-            </div>        
+            </div>     -->    
         <!-- <ul class="factList">
             <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam explicabo, repudiandae dignissimos </li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque libero hic architecto quam tempore voluptate officia vel laborum facere! </li>
@@ -65,24 +67,58 @@
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptas, rerum sequi animi aut error praesentium sit consequuntur? Assumenda fugit </li>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatem. Sint, eaque deserunt nulla libero facilis autem </li>
         </ul>   -->
-
-    
-    
-    
-    
-    
-    
     </section>
 
 
     <section id="tips">
         <h2>AJUDANDO</h2>
-        <a href="#main">test</a>
+        <div class="tipbox">
+            <img src="https://img.icons8.com/color/48/000000/beer-can.png">
+
+            <p>Gosta de cerveja? Consuma latinhas e evite o vidro. No Brasil 99% do alumínio é reciclado.</p>
+        </div>
+        
+        <div class="tipbox">
+            <img src="https://img.icons8.com/color/48/000000/plastic.png">
+        
+            <p>Tire as tampinhas das garrafas PET e Tetrapak. A garrafa fechada pode explodir na hora de prensar o material e ferir quem está manipulando. </p>
+        </div>
+
+        <div class="tipbox">
+            <img src="https://img.icons8.com/color/48/000000/tire.png">
+
+            <p>Aquele pneu velho também já tem solução! O Brasil possui um sistema de logística reversa eficiente. Os revendedores e distribuidores são obrigados a destiná-los corretamente.</p>
+        </div>
+
+        <div class="tipbox">
+            <img src="https://img.icons8.com/cotton/48/000000/tetra-pak.png">
+            <p>Desdobre as caixas de leite e suco Tetrapak. Além de economizar espaço na sua sacola de resíduos recicláveis, você facilita o transporte, a triagem desse material quando chega a uma cooperativa de catadores.</p>
+        </div> 
     </section>
 
-    <section id="coleta">
-        <h2>COLETA</h2>
+    <section id="contato">
+        <h2>CONTATO</h2>
+        <form action="#" method="post">            
+                <div class="formsec">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">          
+                </div>
+                <div class="formsec">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="formsec">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo">        
+                </div>
+                <div class="formsec">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>   
     </section>
+    
     <section>
 
     </section>
@@ -93,7 +129,26 @@
     </section>
     
     <footer>
+        <div id="footcontainer">
+            <div id="footmenu">
+                <ul>
+                    <li><a href="#entenda">Entenda</a></li>
+                    <li><a href="#tips">Ajudando</a></li>
+                    <li><a href="#coleta">Coleta</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
 
+            <div id="social">
+                <a href="#"><i class="icon ion-logo-instagram"></i></a>
+                <a href="#"><i class="icon ion-logo-facebook"></i></a>
+                <a href="#"><i class="icon ion-logo-linkedin"></i></a>
+            </div>
+
+            <div id="copy">
+                <p>Copyright © Eco_JAMPA. 2019</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
