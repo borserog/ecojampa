@@ -27,14 +27,15 @@ html {
 
 body {
     display: grid;
-    grid-template-areas: "header" "didYou" "didYou";
+    grid-template-areas: "header"
+    "entenda" "tips" "contato" "footer"
 }
 
 /* ------------------------------------------------------------------------------ */
 /* Títulos */
 /* ------------------------------------------------------------------------------ */
 h1 {
-    font-size: 280%;
+    font-size: 310%;
     text-shadow: 4px 3px 7px rgba(0,0,0,0.51);
 }
 
@@ -79,10 +80,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(resources/img/jilbert-ebrahimi-691926-unsplash.jpg);
-    background-position: -253px 0;
+    background-image: linear-gradient(85deg, rgba(0, 0, 0, 0.7) -5%, transparent), url(resources/img/Orla-de-João-Pessoa.jpg);
+    background-position: 50% 0;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment: fixed;
     
 }
@@ -103,8 +104,9 @@ header nav .logo {
 }
 
 header nav .logo img {
-    width: 50px;
-    margin: 6px;    
+    width: 10%;
+    max-width: 60px;
+    margin: 5px;   
 }
 
 header nav ul {
@@ -140,19 +142,25 @@ header #maintext {
     margin: 0 18px;
 }
 
-header #maintext .container {
+header #maintext .maincontainer {
     position: relative;
-    top: -140px;
+    top: -176px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
 }
 
 header #maintext h1 {
     letter-spacing: 7px;
     padding-bottom: 10px;
+    color: white;
+    font-weight: 400;
 }
 
 header #maintext p {
     letter-spacing: 2px;
     margin: 0;
+    color: white;
+    font-weight: 400;
 }
 /* ------------------------------------------------------------------------------ */
 /* Seção: ENTENDA */
@@ -160,7 +168,7 @@ header #maintext p {
 #entenda {
     display: flex;
     flex-direction: column;
-    
+    grid-area: entenda;
     /* TODO: breakpoints */
 }
 
@@ -195,5 +203,133 @@ header #maintext p {
 
 
 /* ------------------------------------------------------------------------------ */
-/* Seção: TIPS */
+/* Seção: tips */
 /* ------------------------------------------------------------------------------ */
+#tips {
+    grid-area: tips;
+    display:flex;
+    flex-direction: column;
+}
+
+
+#tips .tipbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+#tips .tipbox:nth-child(odd) {
+    background-color: #ccf4af;
+}
+
+#tips .tipbox img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 14px;
+ 
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: contato */
+/* ------------------------------------------------------------------------------ */
+#contato {
+    grid-area: contato;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#contato form .formsec {
+    display: flex;
+    flex-direction: column;
+    width: 80%;    
+    margin-bottom: 10px;
+}
+
+#contato form .formsec > label {
+    margin-bottom: 5px;
+}
+
+#contato form > input {
+    padding: 10px;
+    margin-top: 15px;
+    display: block;
+    width: 30%;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: footer */
+/* ------------------------------------------------------------------------------ */
+footer {
+    background-color: rgb(54, 54, 54);
+    
+}
+
+#footcontainer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    padding: 20px;
+}
+
+#footcontainer a:link,
+#footcontainer a:visited {
+    color: white;
+    text-decoration: none;    
+}
+
+#footcontainer #footmenu,
+#footcontainer #social,
+#footcontainer #copy {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#footcontainer #footmenu ul {
+    list-style: none;
+
+}
+
+#footcontainer #footmenu ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 90%;
+    
+}
+
+#footcontainer #social {
+    letter-spacing: 15px;
+    order: -1;
+}
+
+#footcontainer #social a i {
+    font-size: 36px;
+    position: relative;
+    left: 7px;
+}
+
+#footcontainer #copy p {
+    font-size: 90%;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
