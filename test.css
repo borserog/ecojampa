@@ -9,7 +9,7 @@
 /* ------------------------------------------------------------------------------ */
 /* max 375px <mobile>
     max 800px <tablet>
-     <desktop> max 1040px */
+     <desktop> max 1140px */
 * {
     margin: 0;
     padding: 0;
@@ -30,11 +30,19 @@ body {
 }
 
 /* ------------------------------------------------------------------------------ */
+/* Reusable */
+/* ------------------------------------------------------------------------------ */
+.row {
+    max-width: 1140px;
+    min-width: 375px;
+    margin: 0 auto;
+}
+/* ------------------------------------------------------------------------------ */
 /* Títulos */
 /* ------------------------------------------------------------------------------ */
 h1 {
     font-size: 280%;
-    text-shadow: 4px 3px 7px rgba(0,0,0,0.51);
+    text-shadow: 6px 4px 5px rgba(0,0,0,0.81);
 }
 
 h2 {
@@ -97,21 +105,47 @@ header nav {
 header nav .logo {
     width: 100%;
     text-align: center;
-    background-color: rgba(144, 220, 90, 0.64);
-
+    background-color:rgba(144, 220, 90, 0.64);
+    position: fixed;
+    z-index: 1;
 }
 
 header nav .logo img {
-    width: 10%;
-    max-width: 60px;
+    width: 50px;
     margin: 5px;   
+   
+}
+/* ---------- ANIMATION ------------ */
+header nav .logo {
+    transition: background-color 0.5s;
+}
+
+header nav .logo:hover {
+    background-color: rgba(144, 220, 90, 1);
+} 
+
+header nav .logo img:hover {
+    animation: rotate 2s ;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------------------------- */
+
+header .navmenu {
+    background-color: rgba(83, 163, 27, 0.5);
+    min-height: 42px;
+    position: relative;
+    top: 64px;
 }
 
 header nav ul {
     display: flex;
-    list-style: none;
-    background-color: rgba(83, 163, 27, 0.5);
-    min-height: 42px;
+    list-style: none;  
 }
 
 header nav ul li {
@@ -142,14 +176,14 @@ header #maintext {
 }
 
 header #maintext .maincontainer {
-    background-color: rgba(0,0,0,0.4);
-    padding: 10px;
-    margin-top: 85px;
+    background-color: rgba(0,0,0,0.3);
+    padding: 40px;
+    margin-top: 7em;
 }
 
 header #maintext h1 {
-    letter-spacing: 7px;
-    padding-bottom: 10px;
+    letter-spacing: 9px;
+    padding-bottom: 5px;
     color: white;
     font-weight: 400;
 }
@@ -171,7 +205,6 @@ header #maintext p {
 }
 
 #entenda .sectionImg {
-    width: 100vw;
     overflow: hidden; 
 }
 
@@ -220,8 +253,9 @@ header #maintext p {
     height: 50px;
     width: 50px;
     margin-bottom: 14px;
-    
-}
+    transform: scale(1.2);
+}    
+
 
 /* ------------------------------------------------------------------------------ */
 /* Seção: contato */
