@@ -10,8 +10,6 @@
 /* max 375px <mobile>
     max 800px <tablet>
      <desktop> max 1040px */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +33,7 @@ body {
 /* Títulos */
 /* ------------------------------------------------------------------------------ */
 h1 {
-    font-size: 310%;
+    font-size: 280%;
     text-shadow: 4px 3px 7px rgba(0,0,0,0.51);
 }
 
@@ -46,17 +44,17 @@ h2 {
     margin: 30px auto;
     letter-spacing: 1px; 
     order: 0;
-  }
-  
+    }
+    
 h2:after {    
-      display: block;
-      height: 2px;
-      width: 100px;
-      background-color: #90DC5A;
-      content: " ";
-      margin: 0 auto;
-      margin-top: 15px;      
-  }
+        display: block;
+        height: 2px;
+        width: 100px;
+        background-color: #90DC5A;
+        content: " ";
+        margin: 0 auto;
+        margin-top: 15px;      
+    }
 
 h3 {
     font-size: 140%;
@@ -64,7 +62,7 @@ h3 {
     text-align: center;  
     margin: 10px auto;
     letter-spacing: 1px; 
-  }
+    }
 
 p {
     text-align: justify;
@@ -89,7 +87,7 @@ header {
 }
 
 header nav {
-    height: 25vh;
+    height: 14vh;
     width: 100%;
     align-self: flex-end;
     display: flex;
@@ -113,6 +111,7 @@ header nav ul {
     display: flex;
     list-style: none;
     background-color: rgba(83, 163, 27, 0.5);
+    min-height: 42px;
 }
 
 header nav ul li {
@@ -135,18 +134,17 @@ header nav ul li:hover {
 }
 
 header #maintext {
-    height: 75vh;
+    height: 86vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 18px;
 }
 
 header #maintext .maincontainer {
-    position: relative;
-    top: -176px;
     background-color: rgba(0,0,0,0.4);
     padding: 10px;
+    margin-top: 85px;
 }
 
 header #maintext h1 {
@@ -228,7 +226,7 @@ header #maintext p {
     height: 50px;
     width: 50px;
     margin-bottom: 14px;
- 
+    
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -332,4 +330,4 @@ footer {
     text-align: center;
     margin: 0;
     padding: 0;
-}
+}    
