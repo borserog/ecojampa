@@ -57,10 +57,10 @@ h2:after {
     }
 
 h3 {
-    font-size: 140%;
+    font-size: 120%;
     word-spacing: 2px;
     text-align: center;  
-    margin: 10px auto;
+    margin: 0 auto 15px auto;
     letter-spacing: 1px; 
     }
 
@@ -175,21 +175,15 @@ header #maintext p {
     overflow: hidden; 
 }
 
-#entenda .sectionImg {
-    width: 100vw;
-    overflow: hidden;
-}    
-
-#entenda:nth-child(3) {
-    display: hidden;
-}
-
 #entenda .sectionImg img {
     width: 100%;
     filter: grayscale(100%);
     transition: filter 2s,
-                transform 1.5s;
-        
+                transform 1.5s;      
+}
+
+#entenda div:not(:nth-child(2)) h3 {
+    margin-top: 15px;
 }
 
 #entenda .sectionImg img:hover {
@@ -252,10 +246,19 @@ header #maintext p {
     flex-direction: column;
     width: 80%;    
     margin-bottom: 10px;
+    max-width: 460px;
 }
 
 #contato form .formsec > label {
     margin-bottom: 5px;
+}
+
+#contato form .formsec input {
+    height: 30px;
+}
+
+#contato form .formsec textarea {
+    height: 130px;
 }
 
 #contato form > input {
@@ -263,6 +266,7 @@ header #maintext p {
     margin-top: 15px;
     display: block;
     width: 30%;
+    max-width: 120px;
 }
 
 
