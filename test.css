@@ -117,22 +117,22 @@ header nav .logo img {
 }
 /* ---------- ANIMATION ------------ */
 header nav .logo {
-    transition: background-color 0.5s;
+    transition: background-color 1.7s;
 }
 
 header nav .logo:hover {
     background-color: rgba(144, 220, 90, 1);
 } 
 
-header nav .logo img:hover {
-    animation: rotate 2s ;
+header nav .logo img {
+    transition: transform 1.7s, scale 1.7s;
 }
 
-@keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
+header nav .logo img:hover {
+    transform: rotate(360deg) scale(0.7);
+    
 }
+
 
 /* --------------------------------- */
 
@@ -172,7 +172,7 @@ header #maintext {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0 18px;
+    margin: 0 auto;
 }
 
 header #maintext .maincontainer {
@@ -308,8 +308,8 @@ header #maintext p {
 /* Seção: footer */
 /* ------------------------------------------------------------------------------ */
 footer {
+    grid-area: footer;
     background-color: rgb(54, 54, 54);
-    
 }
 
 #footcontainer {
