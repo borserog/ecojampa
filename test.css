@@ -26,7 +26,8 @@ html {
 body {
     display: grid;
     grid-template-areas: "header"
-    "entenda" "tips" "contato" "footer"
+    "entenda" "tips" "contato" "footer";
+    overflow-x: hidden;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -90,8 +91,7 @@ header {
     background-position: 50% 0;
     background-size: cover;
     background-repeat: repeat-x;
-    background-attachment: fixed;
-    overflow: hidden;    
+    background-attachment: fixed;    
 }
 
 header nav {
