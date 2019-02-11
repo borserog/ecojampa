@@ -27,7 +27,6 @@ body {
     display: grid;
     grid-template-areas: "header"
     "entenda" "tips" "contato" "footer";
-
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -88,10 +87,13 @@ header {
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(85deg, rgba(0, 0, 0, 0.7) -5%, transparent), url(resources/img/Orla-de-João-Pessoa.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: 50% 0;
     background-size: cover;
     background-repeat: repeat-x;
-    background-attachment: fixed;    
+    background-attachment: scroll;    
 }
 
 header nav {
