@@ -91,7 +91,7 @@ header {
     background-size: cover;
     background-repeat: repeat-x;
     background-attachment: fixed;
-    
+    overflow: hidden;    
 }
 
 header nav {
