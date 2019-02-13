@@ -494,7 +494,7 @@ header #maintext p {
 }
 
 #contato form .formsec input {
-    height: 30px;
+    height: 47px;
 }
 
 #contato form .formsec p {
@@ -503,7 +503,7 @@ header #maintext p {
 }
 
 #contato form .formsec textarea {
-    height: 130px;
+    height: 226px;
 }
 
 #contato form > input {
@@ -512,6 +512,7 @@ header #maintext p {
     display: block;
     width: 30%;
     max-width: 120px;
+    font-size: x-large;
 }
 
 /* --------------------- RESPONSIVIDADE----------------------- */
