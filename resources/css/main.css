@@ -115,7 +115,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(85deg, rgba(0, 0, 0, 0.7) -5%, transparent), url(resources/img/Orla-de-João-Pessoa.jpg);
+    background-image: linear-gradient(85deg, rgba(0, 0, 0, 0.7) -5%, transparent), url(../img/Orla-de-João-Pessoa.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
