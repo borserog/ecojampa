@@ -1,0 +1,593 @@
+/* ------------------------------------------------------------------------------ */
+/* PALETA */
+/* ------------------------------------------------------------------------------ */
+/* padrão: #90DC5A rgb(144, 220, 90) 
+escuro: #53A31B rgb(83, 163, 27)*/
+
+/* ------------------------------------------------------------------------------ */
+/* Breakpoints */
+/* ------------------------------------------------------------------------------ */
+/* <mobile> max 375px 
+max 768px <tablet>
+    <desktop> max 1140px */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Dosis', sans-serif;
+    font-size: 17.5px;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header"
+    "entenda" "tips" "coleta" "contato" "footer";
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Reusable */
+/* ------------------------------------------------------------------------------ */
+.row {
+    max-width: 1140px;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+iframe {
+    display:block;
+    max-width: 940px;
+    margin: 0 auto;
+}
+   
+    
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px auto;
+    
+}
+
+/* --------------------- RESPONSIVIDADE----------------------- */
+
+@media only screen and (min-width: 767px) {
+    .container {
+        padding: 30px;
+        background-color: white;
+    }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Títulos */
+/* ------------------------------------------------------------------------------ */
+h1 {
+    font-size: 280%;
+    text-shadow: 6px 4px 5px rgba(0,0,0,0.81);
+}
+
+h2 {
+    width: 100%;
+    font-size: 240%;
+    word-spacing: 2px;
+    text-align: center;  
+    margin: 0 auto 70px 0;
+    letter-spacing: 7px; 
+    order: 0;
+    }
+    
+h2:after {    
+        display: block;
+        height: 2px;
+        width: 166px;
+        background-color: #90DC5A;
+        content: " ";
+        margin: 0 auto;
+        margin-top: 15px;      
+    }
+
+h3 {
+    font-size: 120%;
+    word-spacing: 2px;
+    text-align: center;  
+    margin: 0 auto 45px auto;
+    letter-spacing: 1px; 
+    }
+
+p {
+    text-align: justify;
+    margin: 0 auto;
+    line-height: 150%;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: HEADER */
+/* ------------------------------------------------------------------------------ */
+header {
+    grid-area: header;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(85deg, rgba(0, 0, 0, 0.7) -5%, transparent), url(resources/img/Orla-de-João-Pessoa.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-attachment: scroll;    
+}
+
+header nav {
+    height: 14vh;
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav .logo {
+    width: 100%;
+    text-align: center;
+    background-color:rgba(144, 220, 90, 0.64);
+    position: fixed;
+    z-index: 1;
+}
+
+header nav .logo img {
+    width: 50px;
+    margin: 5px;     
+}
+/* ---------- ANIMATION ------------ */
+header nav .logo {
+    transition: background-color 1.7s;
+}
+
+header nav .logo:hover {
+    background-color: rgba(144, 220, 90, 1);
+} 
+
+header nav .logo img {
+    transition: transform 1.7s, scale 1.7s;
+}
+
+header nav .logo img:hover {
+    transform: rotate(360deg) scale(0.7);
+    
+}
+
+header nav ul li {
+    transition: letter-spacing 0.5s,
+                background-color 0.5s;
+}
+
+
+header nav ul li:hover {
+    letter-spacing: 3px;
+    background-color: rgba(144, 220, 90, 0.64);  
+}
+
+/* --------------------------------- */
+
+header .navmenu {
+    background-color: rgba(83, 163, 27, 0.5);
+    min-height: 42px;
+    position: relative;
+    top: 64px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;  
+}
+
+header nav ul li {
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited {
+    color: white;
+    text-decoration: none;    
+}
+
+header #maintext {
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+header #maintext .maincontainer {
+    background-color: rgba(0,0,0,0.3);
+    padding: 30px;
+    margin-top: 7em;
+    overflow: hidden;
+}
+
+header #maintext img {
+    display: none;
+}
+
+header #maintext h1 {
+    letter-spacing: 9px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: 400;
+}
+
+header #maintext p {
+    letter-spacing: 2px;
+    margin: 0;
+    color: white;
+    font-weight: 400;
+}
+
+/* --------------------- RESPONSIVIDADE----------------------- */
+
+@media only screen and (min-width: 767px) {
+    header #maintext p {
+        font-size: 145%;
+    }
+
+    h1 {
+        font-size: 500%;
+    }
+
+    header #maintext .maincontainer {
+        padding: 60px;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    header #maintext .maincontainer {
+        margin-top: -1em;
+    }
+    
+    header #maintext img {
+        display: unset;
+        position: relative;
+        width: 30%;
+        top: 152px;
+        left: 579px;
+        animation: rotate 60s linear infinite;
+    }
+
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }    
+}
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: ENTENDA */
+/* ------------------------------------------------------------------------------ */
+#entenda {
+    grid-area: entenda;
+    width: 100%;
+}
+
+#entenda .sectionImg img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 2s,
+                transform 1.5s;      
+}
+
+#entenda div:not(:nth-child(2)) h3 {
+    margin-top: 15px;
+}
+
+#entenda .sectionImg {
+    overflow: hidden;
+}
+
+#entenda .sectionImg img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+#entenda p {
+    padding: 0 25px 25px 25px;
+}
+
+/* --------------------- RESPONSIVIDADE----------------------- */
+
+@media only screen and (min-width: 767px) {
+      
+    #entenda {
+        background-color: #ccf4af;
+    }
+    
+    #entenda .container {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 7px 8px 22px rgba(0,0,0,0.31);
+    }
+    
+    #entenda .container .text {
+        width: 50%;
+    }
+
+    #entenda .container .sectionImg {
+        width: 50%;     
+        border-radius: 26px;
+        overflow: unset;
+    }
+
+    #entenda .container .sectionImg img {
+        border-radius: 26px;
+    }
+
+    #entenda .container div:nth-child(3) img:hover {
+        transform: scale(1.1) rotate(3deg);
+    }   
+
+    #entenda .container div:nth-child(5) img:hover {
+        transform: scale(1.1) rotate(-3deg);
+    }   
+
+
+    #entenda .container div:nth-last-child(3) {
+        order: 1;
+    }
+
+    #entenda .container div:nth-last-child(1) {
+        width: 75%;
+        order: 2;
+    }
+
+    #entenda .container div {
+        padding: 15px;
+    }
+
+    #entenda iframe {
+        height: 480px;
+    }
+}
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: tips */
+/* ------------------------------------------------------------------------------ */
+#tips {
+    grid-area: tips;
+    width: 100%;   
+}
+
+#tips .container .tipbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+#tips .container .tipbox:nth-child(odd) {
+    background-color: #ccf4af;
+}
+
+#tips .container .tipbox img {
+    height: 75px;
+    width: 75px;
+    margin-bottom: 30px;
+    transform: scale(1.2);
+    background-color: #ADEA81;
+    border: 1px solid #ADEA81;
+    border-radius: 26px;
+    padding: 12px;
+}    
+
+
+/* --------------------- RESPONSIVIDADE----------------------- */
+
+@media only screen and (min-width: 767px) {
+    #tips {
+        background-color: #adea81;
+    }
+    
+    #tips .container {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        box-shadow: 7px 8px 22px rgba(0,0,0,0.31);
+    }
+
+    #tips .container div:nth-last-child(2) {
+        order: 1;
+    }
+
+    #tips .container .tipbox {
+        width: 45%;
+        height: 340px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 15px;
+        border-radius: 26px;
+    }
+
+}
+
+/* ------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: coleta */
+/* ------------------------------------------------------------------------------ */
+#coleta {
+    grid-area: coleta;
+    width: 100%;  
+    background-color: white;
+}
+
+#coleta .container {
+    align-items: center;
+}
+
+#coleta .container p {
+    padding: 0 25px 25px 25px;
+}
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: contato */
+/* ------------------------------------------------------------------------------ */
+#contato {
+    grid-area: contato;
+    
+}
+
+#contato .container {     
+    align-items: center;
+    
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#contato form .formsec {
+    display: flex;
+    flex-direction: column;
+    width: 80%;    
+    margin-bottom: 10px;
+    max-width: 460px;
+}
+
+#contato form .formsec > label {
+    margin-bottom: 5px;
+}
+
+#contato form .formsec input {
+    height: 30px;
+}
+
+#contato form .formsec p {
+    padding: 0 25px 25px 25px;
+    text-align: justify;
+}
+
+#contato form .formsec textarea {
+    height: 130px;
+}
+
+#contato form > input {
+    padding: 10px;
+    margin-top: 15px;
+    display: block;
+    width: 30%;
+    max-width: 120px;
+}
+
+/* --------------------- RESPONSIVIDADE----------------------- */
+@media only screen and (min-width: 767px) {
+    #contato, #contato .container {
+        background-color: #f9f9f9;
+    }
+
+
+
+}
+
+
+/* ------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------------ */
+/* Seção: footer */
+/* ------------------------------------------------------------------------------ */
+footer {
+    grid-area: footer;
+    background-color: rgb(54, 54, 54);
+}
+
+footer .container {
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+}
+
+footer .container div {
+    margin: 10px;
+}
+
+footer .container a:link,
+footer .container a:visited {
+    color: white;
+    text-decoration: none;    
+}
+
+footer .container #footmenu ul {
+    list-style: none;
+    text-align: center;
+}
+
+footer .container #footmenu ul li {
+    list-style: none;
+    padding-bottom: 6px;
+    font-size: 90%;    
+}
+
+footer .container #social {
+    letter-spacing: 15px;
+    font-size: 35px;
+    order: -1;
+
+}
+
+footer .container #copy p {
+    font-size: 90%;
+    color: white;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (min-width: 1140px) {
+    .container #footmenu,
+    .container #social,
+    .container #copy {
+        width: 31%;
+    }
+
+    footer .container {
+        flex-flow: row wrap;
+    }
+
+    footer .container #footmenu ul {
+        text-align: start;
+    }
+
+    footer .container #social {
+        order: 0;
+        text-align: center;
+    }
+
+    footer .container #copy p {
+        text-align: end;
+    }
+
+}
