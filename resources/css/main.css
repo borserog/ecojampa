@@ -18,9 +18,8 @@ max 768px <tablet>
 
 html {
     font-family: 'Dosis', sans-serif;
-    font-size: 17.5px;
-    scroll-behavior: smooth;
-    
+    font-size: 24.5px;
+    scroll-behavior: smooth;   
 }
 
 body {
@@ -261,8 +260,8 @@ header #maintext p {
         display: unset;
         position: relative;
         width: 30%;
-        top: 152px;
-        left: 579px;
+        top: 182px;
+        left: 746px;
         animation: rotate 60s linear infinite;
     }
 
@@ -417,7 +416,7 @@ header #maintext p {
 
     #tips .container .tipbox {
         width: 45%;
-        height: 340px;
+        height: 380px;
         align-items: center;
         justify-content: space-evenly;
         margin: 15px;
