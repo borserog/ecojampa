@@ -18,19 +18,13 @@ max 768px <tablet>
 
 html {
     font-family: 'Dosis', sans-serif;
-    font-size: 24.5px;
+    font-size: 17.5px;
     scroll-behavior: smooth;   
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (min-width: 1140px) {
     html {
         font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    html {
-        font-size: 18px;
     }
 }
 
@@ -272,8 +266,8 @@ header #maintext p {
         display: unset;
         position: relative;
         width: 30%;
-        top: 182px;
-        left: 746px;
+        top: 167px;
+        left: 676px;
         animation: rotate 60s linear infinite;
     }
 
