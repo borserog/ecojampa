@@ -1,4 +1,4 @@
-# projetofinalLM
+# Projeto Final - Linguagem de Marcação
 
 Repositório contendo o projeto final da disciplina de Linguagem de Marcação.
 
