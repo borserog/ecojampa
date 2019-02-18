@@ -164,7 +164,7 @@ header nav .logo img {
 }
 
 header nav .logo img:hover {
-    transform: rotate(360deg) scale(0.7);
+    transform: rotate(-360deg) scale(0.7);
     
 }
 
